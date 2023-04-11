@@ -1,0 +1,4 @@
+#1 ZADANIE
+num1 = 1
+
+while num1>=0:
