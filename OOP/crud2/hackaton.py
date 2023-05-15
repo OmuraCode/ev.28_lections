@@ -61,13 +61,9 @@ class Cars(CreateMixin, RetrieveMixin, ListingMixin, UpdateMixin, DeleteMixin):
         return (f"{self.brand} {self.model} ({self.year}), {self.engine} л., {self.color}, {self.type_car}, {self.km} км, {self.price} сом.")
 
     
-# cars_data = Cars(CreateMixin, ListingMixin, RetrieveMixin, UpdateMixin, DeleteMixin)
-
-# создаем автомобили
 car1 = Cars("Ford", "Focus", 2015, 1.6, "белый", "хэтчбек", 100000, 500000)
 car2 = Cars("Toyota", "Corolla", 2010, 1.8, "серый", "седан", 150000, 600000)
 
-# добавляем автомобили в базу данных
 print(car1.create(car1))
 print(car2.create(car2))
 
