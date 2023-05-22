@@ -2,7 +2,6 @@ from  bs4 import BeautifulSoup
 import requests
 import csv
 
-
 def get_html(url: str) -> str:
     '''Получает html разметку определенного сайта по url'''
     response = requests.get(url)
@@ -92,7 +91,3 @@ def main():
         i += 1
 
 main()
-
-
-
-
